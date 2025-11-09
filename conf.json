@@ -1,0 +1,38 @@
+{
+  "mineflayer": {
+    "owner": "Star_Sw0rd123",
+    "cmd_prefix": "#",
+    "username": "minecraft_ai",
+    "ver": "1.21.4",
+    "host": "localhost",
+    "port": 25565
+  },
+  "launcher": {
+    "restart_on_kick_or_crash": true,
+    "is_npm_a_cmd_file": true,
+    "node": "C:\\Program Files\\nodejs\\node.exe",
+    "npm": "C:\\Program Files\\nodejs\\npm.cmd",
+    "cmd": "C:\\Windows\\System32\\cmd.exe"
+  },
+  "openrouter": {
+    "msg_prefix": "hey bot, ",
+    "api_url": "https://openrouter.ai/api/v1/chat/completions",
+    "provide_documentation": true,
+    "api_key": "REDACTED",
+    "model": "meta-llama/llama-4-scout:free",
+    "system_msg": "Keep your responses short and simple. You should never use emojis in your messages.",
+    "max_tokens": 2500,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "min_p": 0.0,
+    "top_a": 0.0,
+    "top_k": 0,
+    "frequency_penalty": 0,
+    "presence_penalty": 0,
+    "repetition_penalty": 1.0,
+    "verbosity": "medium",
+    "referer": "",
+    "title": "",
+    "seed": null
+  }
+}
