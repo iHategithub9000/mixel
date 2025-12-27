@@ -321,6 +321,7 @@ bot.on('chat', async (username, message) => {
     }
     return
   }
+  if (!message.startsWith(cf.mineflayer.cmd_prefix)) return;
   cmd = message.replace(cf.mineflayer.cmd_prefix, "").split(" ")[0];
   args = message.replace(cf.mineflayer.cmd_prefix, "").split(" ").slice(1);
   if (commandExecutors[cmd]) commandExecutors[cmd](username, args, bot)
@@ -355,4 +356,5 @@ bot.on('kicked', (x,y)=>{
 bot.on('error', (x,y)=>{
   console.log(x,y)
   process.exit(1)
+
 })
